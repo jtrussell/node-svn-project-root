@@ -23,11 +23,11 @@ describe('svn-project-root.normalize', function() {
   });
 
   it('should chop at first occurrance of `trunk|branches|tags`', function() {
-    expect(normalize('http://foobar.com/trunk/branches/tags/blargus'))
+    expect(normalize('http://foobar.com/fldr/trunk/branches/tags/blargus'))
       .to.equal('http://foobar.com/fldr');
-    expect(normalize('http://foobar.com/branches/trunk/tags/blargus'))
+    expect(normalize('http://foobar.com/fldr/branches/trunk/tags/blargus'))
       .to.equal('http://foobar.com/fldr');
-    expect(normalize('http://foobar.com/tags/branches/trunk/blargus'))
+    expect(normalize('http://foobar.com/fldr/tags/branches/trunk/blargus'))
       .to.equal('http://foobar.com/fldr');
   });
 
