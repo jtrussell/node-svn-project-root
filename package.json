@@ -1,0 +1,28 @@
+{
+  "name": "svn-project-root",
+  "version": "0.0.0",
+  "description": "Get the root url for your svn project",
+  "main": "lib/svn-project-root.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtrussell/node-svn-project-root.git"
+  },
+  "keywords": [
+    "node",
+    "svn",
+    "url"
+  ],
+  "author": "jtrussell",
+  "license": "MIT",
+  "devDependencies": {
+    "matchdep": "^0.3.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "chai": "^1.9.1",
+    "grunt-simple-mocha": "^0.4.0"
+  }
+}
