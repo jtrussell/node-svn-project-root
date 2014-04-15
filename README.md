@@ -7,7 +7,9 @@
 ```javascript
 var getRoot = require('svn-project-root');
 
-getRoot(function(err, url) {
+// Optionally specify a start directory, defaults to process.cwd(). Directory
+// must be above your package.json or inside a svn repo
+getRoot(['/some/dir',] function(err, url) {
   if(err) {
     // Whoops!
   }
@@ -15,7 +17,7 @@ getRoot(function(err, url) {
 });
 
 try {
-  var url = getRoot.sync();
+  var url = getRoot.sync(['/some/dir']);
 } catch(err) {
   // Whoops!
 }

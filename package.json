@@ -24,5 +24,9 @@
     "grunt-contrib-watch": "^0.6.1",
     "chai": "^1.9.1",
     "grunt-simple-mocha": "^0.4.0"
+  },
+  "dependencies": {
+    "findup": "^0.1.5",
+    "svn-info": "^0.1.3"
   }
 }
