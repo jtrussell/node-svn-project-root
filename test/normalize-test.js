@@ -5,7 +5,7 @@
 var expect =  require('chai').expect
   , normalize = require('../lib/svn-project-root').normalize;
 
-describe('svn-project-root.normalize', function() {
+describe('svn-project-root#normalize', function() {
 
   it('should chop away `trunk`', function() {
     var actual = normalize('http://foobar.com/fldr/trunk/blargus');

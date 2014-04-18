@@ -1,0 +1,14 @@
+{
+  "name": "svn-project-w-package-json",
+  "version": "0.100.1",
+  "private": true,
+  "description": "Test package",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "svn",
+    "url": "https://svnhub.com/foo/bar/trunk"
+  },
+  "author": "jtrussell",
+  "license": "MIT"
+}
+
