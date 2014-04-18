@@ -1,4 +1,4 @@
-# SVN Project Root (WIP)
+# SVN Project Root
 
 > Get the root url for your svn project
 
@@ -9,7 +9,7 @@
 This module exports a function which asynchronously determines the project root
 for your svn repository. 
 
-```
+```javascript
 var doSomethingWithRoot = function(err, root) {
   // Handle error, do something with root
 };
@@ -30,7 +30,7 @@ The synchronous flavor of the above method. This may throw an error if for
 example there is a problem parsing your project's `package.json` or if the
 project in question is not an svn repository.
 
-```
+```javascript
 var getRoot = require('svn-project-root')
   , otherProjectFldr = '/other/project/folder'
   , projectRoot;
@@ -61,7 +61,7 @@ satisfy your needs.
 Usernames and passwords will be stripped away and the url will be chopped down
 to just before `trunk|branches|tags` start.
 
-```
+```javascript
 var uglyUrl = 'https://jtrussell@svnhub.com/fldr/branches/assets/scripts'
   , normalize = require('svn-project-root').normalize;
 console.log(normalize(uglyUrl));
@@ -129,7 +129,7 @@ the first `package.json` it sees in the passed directory (defaults to
 
 Tests are run with [grunt][1] and [mocha][2].
 
-```
+```shell
 grunt test
 ```
 
