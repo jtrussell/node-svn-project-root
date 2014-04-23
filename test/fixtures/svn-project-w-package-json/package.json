@@ -6,7 +6,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "svn",
-    "url": "https://svnhub.com/foo/bar/trunk"
+    "url": "https://jtrussell@svnhub.com/foo/bar/trunk"
   },
   "author": "jtrussell",
   "license": "MIT"

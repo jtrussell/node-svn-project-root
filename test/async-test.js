@@ -16,5 +16,13 @@ describe('svn-project-root', function() {
     });
   });
 
+  it('should be able to get url from svn info', function(done) {
+    getRoot(j(__dirname, 'fixtures/blargus'), function(err, root) {
+      expect(err).to.equal(null);
+      expect(root).to.equal('http://blargus.googlecode.com/svn');
+      done();
+    });
+  });
+
 });
 

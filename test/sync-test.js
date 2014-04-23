@@ -14,6 +14,12 @@ describe('svn-project-root#sync', function() {
     expect(root).to.equal('https://svnhub.com/foo/bar');
   });
 
+  it('should be able to get url from svn info', function() {
+    var projFldr = j(__dirname, 'fixtures/blargus')
+      , root = getRootSync(projFldr);
+    expect(root).to.equal('http://blargus.googlecode.com/svn');
+  });
+
 });
 
 
