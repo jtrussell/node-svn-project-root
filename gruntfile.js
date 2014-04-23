@@ -33,6 +33,15 @@ module.exports = function(grunt) {
         files: 'gruntfile.js',
         tasks: ['jshint:gruntfile']
       }
+    },
+
+    bump: {
+      options: {
+        commitMessage: 'chore: Bump for release (v%VERSION%)',
+        files: ['package.json'],
+        commitFiles: ['-a'],
+        push: false
+      }
     }
   });
 
