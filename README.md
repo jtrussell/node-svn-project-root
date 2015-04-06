@@ -112,7 +112,7 @@ This module assumes your svn project directory structure looks like:
 ```
 
 The root or your project is assumed to be the parent directory of the first
-occurrence of `trunk|branches|root`, if you structure your repo such that it's
+occurrence of `trunk|branches|tags`, if you structure your repo such that it's
 svn url looks like `https://svnhub.com/trunk/trunk/trunk/branches/foo` you may
 have problems. I.e. please do not name repo ancestors `trunk|branches|tags`.
 
