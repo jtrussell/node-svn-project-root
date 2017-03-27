@@ -138,4 +138,4 @@ grunt test
 MIT
 
 [1]: http://gruntjs.com/ "Grunt"
-[2]: http://visionmedia.github.io/mocha/ "Mocha"
+[2]: http://mochajs.org/ "Mocha"
